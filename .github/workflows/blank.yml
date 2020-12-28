@@ -1,0 +1,14 @@
+name: Probby
+
+on:
+  repository_dispatch:
+  
+
+jobs:
+  issue-receiver:
+    name: Issue Receiver
+    runs-on: ubuntu-latest
+    steps:
+      - uses: SaschaMann/probby/packages/issue-receiver@first-draft
+
+  
